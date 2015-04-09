@@ -1,0 +1,9 @@
+---
+
+- name: Apply common configuration to all remote servers
+  hosts: all
+  sudo: yes
+  sudo_user: root
+  remote_user: ubuntu
+  roles:
+    - base 
